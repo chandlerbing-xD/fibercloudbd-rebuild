@@ -1,28 +1,43 @@
-# FiberCloudBD Website Rebuild (Static Architecture)
+# Astro Starter Kit: Minimal
 
-## Overview
-This project is a high-performance static rebuild of the existing
-[FiberCloudBD](https://fibercloudbd.com/) website, inspired by
-modern ISP sites like Google Fiber and Sonic. The goal is to deliver a fast, clean, responsive, and well-documented ISP website without using a traditional database or heavy CMS.
+```sh
+npm create astro@latest -- --template minimal
+```
 
-## Why This Project
-The current site is functional but can be improved in:
-- Performance (faster loading)
-- Responsiveness (mobile-first design)
-- Modern design and layout
-- Documentation of design and technical decisions
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Goals
-- Rebuild the site exactly in terms of content and sections
-- Implement with Astro + Tailwind (modern static architecture)
-- Optimize images, animations, and layout for speed
-- Document every architectural and design decision
-- Produce a portfolio-quality project suitable for jobs and academic review
+## 🚀 Project Structure
 
-## Non-goals
-- No backend user accounts
-- No database-driven CMS
-- No extra features beyond the current site
+Inside of your Astro project, you'll see the following folders and files:
 
-## Status
-Planning & documentation phase
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
