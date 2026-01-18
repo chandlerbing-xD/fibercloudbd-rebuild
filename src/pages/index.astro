@@ -1,101 +1,354 @@
 ---
+// src/pages/index.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="FiberCloudBD Home">
+<BaseLayout title="FiberCloudBD - Lightning Fast Fiber Internet">
 
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20 pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="text-center lg:text-left">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
+            Internet at the
+            <span class="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              Speed of Light
+            </span>
+          </h1>
+          <p class="mt-6 text-xl text-gray-600 leading-relaxed max-w-2xl">
+            Experience ultra-fast, reliable fiber internet that powers your streaming, gaming, and work-from-home needs without compromise.
+          </p>
 
-  <section class="bg-blue-50 py-20">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-     <h1 class="text-6xl md:text-7xl font-extrabold text-blue-600 leading-tight">
-  Fast, Reliable Fiber Internet
-</h1>
+          <!-- CTA Buttons -->
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="/plans" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              View Plans & Pricing
+            </a>
+            <a href="#check-availability" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-all">
+              Check Availability
+            </a>
+          </div>
 
-      <p class="mt-4 text-lg text-gray-700">
-        Experience blazing speed and uninterrupted connectivity with FiberCloudBD.
-      </p>
-      <div class="mt-8 flex justify-center gap-4">
-        <a href="/plans" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-          View Plans
-        </a>
-        <a href="/support" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300">
-          Get Support
-        </a>
+          <!-- Trust Indicators -->
+          <div class="mt-12 flex items-center gap-8 justify-center lg:justify-start text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>No data caps</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>99.9% uptime</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>24/7 support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="relative hidden lg:block">
+          <div class="relative">
+            <!-- Speed Indicator -->
+            <div class="bg-white rounded-3xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div class="text-center">
+                <div class="text-6xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  1 Gbps
+                </div>
+                <div class="text-gray-600 mt-2 text-lg">Download Speed</div>
+                <div class="mt-6 h-4 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full animate-pulse" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-<!-- Features Section -->
+  <!-- Speed Comparison -->
   <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-blue-600">Why Choose FiberCloudBD?</h2>
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+          Why Fiber is <span class="text-blue-600">Faster</span>
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          See how fiber optic internet outperforms traditional connections
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- DSL -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center">
+          <div class="text-gray-400 text-lg font-semibold mb-4">DSL Internet</div>
+          <div class="text-4xl font-bold text-gray-400 mb-2">25 Mbps</div>
+          <div class="h-32 flex items-end justify-center mb-4">
+            <div class="w-full bg-gray-300 rounded-t-lg" style="height: 30%"></div>
+          </div>
+          <p class="text-sm text-gray-500">Slow for multiple devices</p>
+        </div>
+
+        <!-- Cable -->
+        <div class="bg-gray-50 rounded-2xl p-8 text-center">
+          <div class="text-gray-600 text-lg font-semibold mb-4">Cable Internet</div>
+          <div class="text-4xl font-bold text-gray-600 mb-2">100 Mbps</div>
+          <div class="h-32 flex items-end justify-center mb-4">
+            <div class="w-full bg-gray-400 rounded-t-lg" style="height: 60%"></div>
+          </div>
+          <p class="text-sm text-gray-500">Slows during peak hours</p>
+        </div>
+
+        <!-- Fiber -->
+        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-center shadow-xl transform scale-105">
+          <div class="text-white text-lg font-semibold mb-4">Fiber Internet</div>
+          <div class="text-4xl font-bold text-white mb-2">1000 Mbps</div>
+          <div class="h-32 flex items-end justify-center mb-4">
+            <div class="w-full bg-white bg-opacity-90 rounded-t-lg" style="height: 100%"></div>
+          </div>
+          <p class="text-sm text-blue-100">Consistent speed, always</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+          Built for Your <span class="text-blue-600">Digital Life</span>
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Everything you need for seamless connectivity
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Feature 1 -->
-        <div class="text-center p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800">Blazing Speeds</h3>
-          <p class="mt-2 text-gray-600">
-            Enjoy high-speed fiber internet for streaming, gaming, and working from home without interruptions.
+        <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Ultra-Fast Speeds</h3>
+          <p class="text-gray-600">
+            Up to 1 Gbps download and upload speeds for instant streaming, gaming, and downloads.
           </p>
         </div>
+
         <!-- Feature 2 -->
-        <div class="text-center p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800">Reliable Connection</h3>
-          <p class="mt-2 text-gray-600">
-            Our fiber network is built for stability, keeping you connected 24/7 with minimal downtime.
+        <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">99.9% Reliability</h3>
+          <p class="text-gray-600">
+            Our fiber-optic network ensures consistent performance with minimal downtime.
           </p>
         </div>
+
         <!-- Feature 3 -->
-        <div class="text-center p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-gray-800">24/7 Support</h3>
-          <p class="mt-2 text-gray-600">
-            Our support team is always ready to help you with setup, troubleshooting, or any questions.
+        <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Secure Connection</h3>
+          <p class="text-gray-600">
+            Advanced security features to keep your data safe and protected at all times.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Support</h3>
+          <p class="text-gray-600">
+            Expert support team available around the clock to help with any issues.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Plans Teaser Section -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold text-blue-600">Our Plans</h2>
-    <p class="mt-4 text-gray-700">
-      Choose a plan that fits your needs. Fast, reliable, and affordable.
-    </p>
-
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Plan 1 -->
-      <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-gray-800">Basic</h3>
-        <p class="mt-2 text-gray-600">Up to 50 Mbps, ideal for casual browsing and streaming.</p>
-        <p class="mt-4 font-bold text-blue-600">$20/mo</p>
-        <a href="/plans" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-          View Details
-        </a>
+  <!-- Plans Preview -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+          Simple, Transparent <span class="text-blue-600">Pricing</span>
+        </h2>
+        <p class="mt-4 text-xl text-gray-600">
+          Choose the perfect plan for your needs. No hidden fees, ever.
+        </p>
       </div>
 
-      <!-- Plan 2 -->
-      <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-gray-800">Standard</h3>
-        <p class="mt-2 text-gray-600">Up to 150 Mbps, perfect for families and multiple devices.</p>
-        <p class="mt-4 font-bold text-blue-600">$40/mo</p>
-        <a href="/plans" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-          View Details
-        </a>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Basic Plan -->
+        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-600 transition-all hover:shadow-xl">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+            <p class="text-gray-600 mb-6">Perfect for light browsing</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-gray-900">৳500</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <div class="text-3xl font-bold text-blue-600 mb-6">50 Mbps</div>
+            <a href="/plans" class="block w-full bg-gray-100 text-gray-900 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+              Get Started
+            </a>
+          </div>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Unlimited data
+            </li>
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Free installation
+            </li>
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              24/7 support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Standard Plan - Popular -->
+        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 shadow-2xl transform scale-105 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+              Most Popular
+            </span>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-white mb-2">Standard</h3>
+            <p class="text-blue-100 mb-6">Great for families</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-white">৳900</span>
+              <span class="text-blue-100">/month</span>
+            </div>
+            <div class="text-3xl font-bold text-white mb-6">150 Mbps</div>
+            <a href="/plans" class="block w-full bg-white text-blue-600 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+              Get Started
+            </a>
+          </div>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center text-white">
+              <svg class="h-5 w-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Everything in Basic
+            </li>
+            <li class="flex items-center text-white">
+              <svg class="h-5 w-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Free WiFi router
+            </li>
+            <li class="flex items-center text-white">
+              <svg class="h-5 w-5 text-white mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Priority support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-600 transition-all hover:shadow-xl">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+            <p class="text-gray-600 mb-6">Ultimate performance</p>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-gray-900">৳1500</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <div class="text-3xl font-bold text-blue-600 mb-6">1 Gbps</div>
+            <a href="/plans" class="block w-full bg-gray-100 text-gray-900 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+              Get Started
+            </a>
+          </div>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Everything in Standard
+            </li>
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Premium router
+            </li>
+            <li class="flex items-center text-gray-600">
+              <svg class="h-5 w-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Dedicated support
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Plan 3 -->
-      <div class="p-6 border rounded-lg shadow-sm hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-gray-800">Premium</h3>
-        <p class="mt-2 text-gray-600">Up to 500 Mbps, for power users and heavy streaming/gaming.</p>
-        <p class="mt-4 font-bold text-blue-600">$70/mo</p>
-        <a href="/plans" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-          View Details
+      <div class="text-center mt-12">
+        <a href="/plans" class="inline-flex items-center text-blue-600 font-semibold text-lg hover:text-blue-700">
+          View All Plans & Features
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- CTA Section -->
+  <section id="check-availability" class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Ready to Experience Fiber Speed?
+      </h2>
+      <p class="text-xl text-blue-100 mb-10">
+        Check if FiberCloudBD is available in your area and get connected today.
+      </p>
+      <form class="max-w-md mx-auto flex gap-4">
+        <input
+            type="text"
+            placeholder="Enter your area or postal code"
+            class="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        />
+        <button type="submit" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap">
+          Check Now
+        </button>
+      </form>
+      <p class="mt-6 text-blue-100 text-sm">
+        Or call us at <a href="tel:+8801234567890" class="underline font-semibold">+880 1234-567890</a>
+      </p>
+    </div>
+  </section>
 
 </BaseLayout>
-

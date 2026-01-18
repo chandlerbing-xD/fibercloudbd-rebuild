@@ -1,9 +1,380 @@
 ---
+// src/pages/plans.astro
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="FiberCloudBD Plans">
-  <h1 class="text-3xl font-bold text-blue-600">Our Plans</h1>
-  <p class="mt-4 text-gray-700">
-    This is where the ISP plans will be listed.
-  </p>
+<BaseLayout title="Plans & Pricing - FiberCloudBD">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900">
+        Simple, <span class="text-blue-600">Transparent</span> Pricing
+      </h1>
+      <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+        Choose the perfect fiber internet plan for your needs. No hidden fees, no contracts, no surprises.
+      </p>
+    </div>
+  </section>
+
+  <!-- Plans Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+        <!-- Basic Plan -->
+        <div class="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:border-blue-600 transition-all hover:shadow-2xl">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+            <p class="text-gray-600">Perfect for individuals</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-center justify-center gap-2 mb-4">
+              <span class="text-6xl font-bold text-gray-900">৳500</span>
+              <span class="text-gray-600 text-lg">/month</span>
+            </div>
+            <div class="bg-blue-50 rounded-2xl py-4 px-6 inline-block">
+              <div class="text-4xl font-bold text-blue-600">50 Mbps</div>
+              <div class="text-sm text-gray-600 mt-1">Download & Upload</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="block w-full bg-gray-900 text-white text-center py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors mb-8">
+            Get Started
+          </a>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">Unlimited Data</div>
+                <div class="text-sm text-gray-600">No data caps or throttling</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">Free Installation</div>
+                <div class="text-sm text-gray-600">Professional setup included</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">24/7 Support</div>
+                <div class="text-sm text-gray-600">Always here to help</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">WiFi Router</div>
+                <div class="text-sm text-gray-600">Standard router included</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">No Contract</div>
+                <div class="text-sm text-gray-600">Cancel anytime</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <div class="text-sm text-gray-600 text-center">
+              <strong>Perfect for:</strong> Light browsing, email, social media
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Plan - Most Popular -->
+        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 shadow-2xl transform scale-105 relative">
+          <div class="absolute -top-5 left-1/2 transform -translate-x-1/2">
+            <span class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+              MOST POPULAR
+            </span>
+          </div>
+
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-white mb-2">Standard</h3>
+            <p class="text-blue-100">Great for families</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-center justify-center gap-2 mb-4">
+              <span class="text-6xl font-bold text-white">৳900</span>
+              <span class="text-blue-100 text-lg">/month</span>
+            </div>
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl py-4 px-6 inline-block">
+              <div class="text-4xl font-bold text-white">150 Mbps</div>
+              <div class="text-sm text-blue-100 mt-1">Download & Upload</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="block w-full bg-white text-blue-600 text-center py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors mb-8">
+            Get Started
+          </a>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-white mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-white">Everything in Basic</div>
+                <div class="text-sm text-blue-100">Plus additional features</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-white mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-white">Premium WiFi Router</div>
+                <div class="text-sm text-blue-100">Dual-band AC router</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-white mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-white">Priority Support</div>
+                <div class="text-sm text-blue-100">Faster response times</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-white mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-white">Static IP Available</div>
+                <div class="text-sm text-blue-100">Optional add-on</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-white mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-white">Free Speed Upgrade</div>
+                <div class="text-sm text-blue-100">After 6 months loyalty</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-white border-opacity-20">
+            <div class="text-sm text-blue-100 text-center">
+              <strong>Perfect for:</strong> Streaming 4K, gaming, remote work, multiple devices
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:border-blue-600 transition-all hover:shadow-2xl">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+            <p class="text-gray-600">Ultimate performance</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-center justify-center gap-2 mb-4">
+              <span class="text-6xl font-bold text-gray-900">৳1500</span>
+              <span class="text-gray-600 text-lg">/month</span>
+            </div>
+            <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl py-4 px-6 inline-block">
+              <div class="text-4xl font-bold text-white">1 Gbps</div>
+              <div class="text-sm text-blue-100 mt-1">Download & Upload</div>
+            </div>
+          </div>
+
+          <a href="#contact" class="block w-full bg-gray-900 text-white text-center py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors mb-8">
+            Get Started
+          </a>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">Everything in Standard</div>
+                <div class="text-sm text-gray-600">Plus premium features</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">WiFi 6 Router</div>
+                <div class="text-sm text-gray-600">Latest tri-band technology</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">Dedicated Support</div>
+                <div class="text-sm text-gray-600">Personal account manager</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">Free Static IP</div>
+                <div class="text-sm text-gray-600">Included at no extra cost</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold text-gray-900">99.99% SLA</div>
+                <div class="text-sm text-gray-600">Guaranteed uptime</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <div class="text-sm text-gray-600 text-center">
+              <strong>Perfect for:</strong> Power users, large families, smart homes, businesses
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Plans Teaser -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">
+        Need a <span class="text-blue-600">Business Plan</span>?
+      </h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        We offer custom fiber solutions for businesses with dedicated support, SLAs, and enterprise features.
+      </p>
+      <a href="/support#contact" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl">
+        Contact Sales
+        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="space-y-6">
+        <details class="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-600 transition-colors">
+          <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-gray-900">
+            Is installation really free?
+            <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="mt-4 text-gray-600">
+            Yes! Professional installation is completely free with all plans. Our technicians will set up your fiber connection and WiFi router at no additional cost.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-600 transition-colors">
+          <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-gray-900">
+            Are there any contracts or commitments?
+            <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="mt-4 text-gray-600">
+            No contracts required! You can cancel anytime with 30 days notice. We believe in earning your business every month with great service.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-600 transition-colors">
+          <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-gray-900">
+            What's the difference between download and upload speeds?
+            <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="mt-4 text-gray-600">
+            With fiber, you get symmetrical speeds - meaning your upload and download speeds are the same! This is perfect for video calls, cloud backups, and content creation.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-600 transition-colors">
+          <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-gray-900">
+            Can I upgrade or downgrade my plan?
+            <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="mt-4 text-gray-600">
+            Absolutely! You can change your plan anytime. Upgrades take effect immediately, and downgrades start at your next billing cycle.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Ready to Get Started?
+      </h2>
+      <p class="text-xl text-blue-100 mb-10">
+        Sign up today and experience the difference fiber makes.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+8801234567890" class="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          Call: +880 1234-567890
+        </a>
+        <a href="/support" class="inline-flex items-center justify-center bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-800 transition-colors">
+          Contact Support
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
